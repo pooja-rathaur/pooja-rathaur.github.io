@@ -1,12 +1,17 @@
 
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
     <title>Your Personal Website</title>
 </head>
+<head>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+</head>
+
 <body>
     <header>
         <nav>
@@ -22,11 +27,11 @@
     <section id="about">
         <div class="container">
             <img src="my_headshot.jpeg" alt="Pooja Rathaur">
-            <h1>Pooja Rathaur</h1>
-            <p>Hello! I'm Pooja, a junior at UC Berkeley double majoring in Business Administration and Data Science. </p>
+            <h1 id="typed-name" class="typed-name"></h1>
+            <p>Hello! I'm Pooja, a junior at UC Berkeley double majoring in Business Administration and Data Science.</p>
             <div class="social-links">
-                <a href="https://github.com/pooja-rathaur">GitHub</a>
-                <a href="https://www.linkedin.com/in/pooja-rathaur/">LinkedIn</a>
+                <a class="social-button" href="https://github.com/pooja-rathaur">GitHub</a>
+                <a class="social-button" href="https://www.linkedin.com/in/pooja-rathaur/">LinkedIn</a>
             </div>
         </div>
     </section>
@@ -50,5 +55,20 @@
     <footer>
         <p>&copy; 2023 Pooja Rathaur</p>
     </footer>
+
+    <!-- took the help of online resources for this  -->
+    <script>
+        // Initialize Typed.js for your name
+        const typedName = new Typed('#typed-name', {
+            strings: ['Pooja Rathaur'],
+            typeSpeed: 80, // Typing speed in milliseconds
+            backSpeed: 40, // Backspacing speed in milliseconds
+            startDelay: 500, // Delay before typing starts in milliseconds
+            loop: false, // Don't loop the animation
+            showCursor: true, // Show typing cursor
+        });
+    </script>
+    
+
 </body>
 </html>

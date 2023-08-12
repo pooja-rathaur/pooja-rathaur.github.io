@@ -81,3 +81,37 @@ footer {
     background-color: #007bff;
     color: #fff;
 }
+
+/* Social Media Button Styles */
+.social-button {
+    display: inline-block;
+    padding: 8px 16px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    margin: 0 8px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.social-button:hover {
+    background-color: #ffc107;
+    transform: scale(1.1);
+}
+
+
+/* Header Styles */
+.container {
+    text-align: center;
+    padding: 50px 0;
+}
+
+.typed-name {
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+
+
